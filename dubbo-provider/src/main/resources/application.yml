@@ -1,0 +1,16 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: dubbo-provider
+
+dubbo:
+  registry:
+    address: zookeeper://sunhomo.cn:2181,sunhomo.cn:2182,sunhomo.cn:2183
+    timeout: 10000
+  protocol:
+    name: dubbo
+    port: 20880
+  scan:
+    base-packages: cn.sunhomo.dubbo.service
